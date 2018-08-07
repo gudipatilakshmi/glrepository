@@ -5,7 +5,7 @@ node ('linux') {
     exws (extWorkspace) {
         stage('Stage 2. Build on the build server')
 
-        git url: 'https://github.com/alexsomai/dummy-hello-world.git'
+        git url:https://github.com/gudipatilakshmi/
 
         def mvnHome = tool 'M3'
         sh '${mvnHome}/bin/mvn clean install -DskipTests'
